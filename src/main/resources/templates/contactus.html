@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/stules.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TAKE LUF</div>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/beats">BEATS</a></li>
+                <li><a href="/sales">SALES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-us">
+            <h2>CONTACT US</h2>
+            <p>QUESTIONS ABOUT YOUR PURCHASE? PLEASE REFER TO OUR CUSTOMER SERVICE HELP CENTER BY EMAILING US AT RIZEMAYCRY@PIXIE.COM.</p>
+            <p>PLEASE BE SURE TO INCLUDE YOUR FULL NAME, UID TG, AND ANY ADDITIONAL INFORMATION REGARDING YOUR PURCHASE SO THAT WE MAY BETTER ASSIST YOU.</p>
+            <p>TYPICALLY, CUSTOMER SERVICE REQUESTS ARE RESPONDED TO WITHIN 1-2 BUSINESS DAYS OF SUBMISSION.</p>
+
+            <div th:if="${message}" class="alert alert-success">
+                <p th:text="${message}"></p>
+            </div>
+
+            <div th:if="${error}" class="alert alert-danger">
+                <p th:text="${error}"></p>
+            </div>
+
+            <form action="/submitContact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="telegram">Telegram:</label>
+                <input type="text" id="telegram" name="telegram" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 TAKE LUF | SHOP. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="/contactus">CONTACT US</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/terms">TERMS</a></li>
+                    <li><a href="/privacy">PRIVACY</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

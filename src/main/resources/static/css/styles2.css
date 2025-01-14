@@ -1,0 +1,218 @@
+/* styles2.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sales-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+    justify-content: center; /* Center the content vertically */
+}
+
+.sales-section img {
+    max-width: 50%; /* Limit the width to 80% of the container */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space below the sales image */
+}
+
+.sales-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.explosion-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px; /* Add some space to the right of the explosion image */
+}
+
+.explosion-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2; /* Ensure the explosion image is behind the button */
+}
+
+.write-to-buy-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure the button is above the explosion image */
+}
+
+.write-to-buy {
+    background: url('image.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    width: 200px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2; /* Ensure the button is above the explosion image */
+}
+
+.write-to-buy:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.kit-details {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.kit-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.kit-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.kit-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.kit-details ul li {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+    width: 400px;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.popup-content label {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.popup-content input:focus {
+    outline: none;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.popup-content button {
+    width: 100%; /* Ensure the button is the same width as the input fields */
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.popup-content button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}

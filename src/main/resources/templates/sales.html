@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="/css/styles2.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TAKELUF</div>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/beats">BEATS</a></li>
+                <li><a href="/sales">SALES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sales-section">
+            <img src="/images/sales-image.png" alt="sales-image">
+            <div class="sales-info">
+                <div class="explosion-container">
+                    <div class="explosion-image">
+                        <img src="/images/explosion.png" alt="Explosion Image">
+                    </div>
+                    <div class="write-to-buy-container">
+                        <button class="write-to-buy">WRITE TO BUY</button>
+                    </div>
+                </div>
+                <div class="kit-details">
+                    <h2>loopkit feat. ennay - mansion</h2>
+                    <p>KIT CONTAINS:</p>
+                    <ul>
+                        <li>808s and basses - 19</li>
+                        <li>melodic loops - 8</li>
+                        <li>gross beat presets - 6</li>
+                        <li>mixer presets - 5</li>
+                        <li>serum presets - 14</li>
+                        <li>claps - 7</li>
+                        <li>cymbals - 4</li>
+                        <li>fx - 9</li>
+                        <li>hardstyle kicks - 2</li>
+                        <li>hi-hats - 12</li>
+                        <li>kicks - 5</li>
+                        <li>open hats - 6</li>
+                        <li>percs - 9</li>
+                        <li>snares - 6</li>
+                        <li>transitions and impacts - 13</li>
+                    </ul>
+                    <p>PRICE: 50$</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="/contactus">CONTACT US</a>
+            <a href="/faqs">FAQs</a>
+            <a href="/terms">TERMS</a>
+            <a href="/privacy">PRIVACY</a>
+        </div>
+        <p>&copy; 2023 TAKELUF | SHOP | all rights reserved</p>
+    </footer>
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="telegram">Telegram:</label>
+                <input type="text" id="telegram" name="telegram" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+/* styles1.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.beats-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.beat-card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.beat-card-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    filter: blur(5px) brightness(0.5);
+}
+
+.beat-card-content {
+    position: relative;
+    z-index: 2;
+}
+
+.beat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.beat-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% - 40px); /* Ширина на 100% минус отступы */
+}
+
+.beat-info p {
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.listen-vk {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.listen-vk:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: auto;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
